@@ -101,8 +101,8 @@ export QUARTUS_ROOTDIR_OVERRIDE="${CAD_TOOL_LOC}/intelFPGA_pro/16.0/quartus/"
 export MTI_HOME="${CAD_TOOL_LOC}/modelsim105b/modeltech"
 alias quartus="quartus --64bit"
 
-export LM_LICENSE_FILE="27007@mlm.ece.utoronto.ca:27008@mlm.ece.utoronto.ca:1802@ra.eecg.toronto.edu:27012@u10e.vrg.utoronto.ca:40012@u10e.vrg.utoronto.ca:7326@picton.eecg.toronto.edu"
-export MGLS_LICENSE_FILE=" 7056@u10e.vrg.utoronto.ca:6056@u10e.vrg.utoronto.ca:48056@localhost:46056@localhost:47056@localhost:58056@localhost:56056@localhost:57056@localhost"
+export LM_LICENSE_FILE="ENQUIRE ABOUT LISCENSE SERVER"
+export MGLS_LICENSE_FILE="ENQUIRE ABOUT LISCENSE SERVER"
 ```
 
 ## 2.5 - Test Installation
