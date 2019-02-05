@@ -130,7 +130,7 @@ $ ./cci_hello_ase
 
 Should print "Hello world!" and finally `[APP]  Session ended` without errors
 
-## 3 - Migrating OPAE v0.9.0 Project to v1.1.0
+## 4 - Migrating OPAE v0.9.0 Project to v1.1.0
 
 Suggestion 1: use my seed project and replace the source files with your own.
 
@@ -161,6 +161,36 @@ This should solve most of the software-based make-related issues
 AFU configurations are now stored in a JSON, this allows the accelerator UUID to be determined at make-time by reading from the JSON and storing the value in a macro.
 
 There should be a file: "<project_dir>/<project_name>.json" which has the same structure as the json included in this repository.
+
+### Software
+If using my seed project:  
+**Simulation**
+```
+$ cd hw
+
+#To build sim environment
+$ make simsetup
+
+#To compile and sim
+$ make
+
+#To compile only
+$ make vlog
+
+#To sim only
+$ make sim
+
+#To open waveform in modelsim (x-forawrding required)
+$ make wave
+```
+
+**Synthesis**  
+to be added
+<!-- To synthesize, you must have a version of the SR release (I only tested with "SR-5.0.3-Release") mine is located at "intel/SR-5.0.3-Release". Once you have the release (available at paderborn, and possibly vLab), add the following line to the OPAE env configuration file from step 3:  
+
+```
+export OPAE_PLATFORM_ROOT="${USR_HOME_ABS}/<path to SR release>
+``` -->
 
 ## I - Additional Notes
 - If you get this issue `/bin/sh: 1: Bad substitution` add `SHELL = bash` to the top of the Makefile, or change the symlink for bin/sh to point to bin/bash rather than bin/dash (ubuntu specific issue)
